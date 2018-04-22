@@ -122,5 +122,6 @@ public class FacadeTurno {
     public void finalizarTrabajo(Trabajo trabajo, LocalDateTime fechaFinal){
         trabajo.setFechaHoraFinal(fechaFinal);
         long minutes = ChronoUnit.MINUTES.between(trabajo.getFechaHoraInicio(), fechaFinal);
+        int x=0;
     }
 }
